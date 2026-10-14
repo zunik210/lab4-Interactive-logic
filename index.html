@@ -6,11 +6,58 @@
 
 <body>
 
-    <h1>Think Before You React</h1>
-    <p>Welcome to my webpage!</p>
+    <div class="container">
 
-    <script>let choice = "";</script>
+        <h1>Think Before You React</h1>
+        <p>Pause, reflect, and choose your response.</p>
 
+        <!-- Stage 1: Read the message and reply -->
+        <div id="stage1">
+
+            <h2>You received a message!</h2>
+
+            <img id="messageImage" src=""
+                 alt="Incoming text message" width="300">
+
+            <p id="messageText"></p>
+
+            <textarea id="reply"
+                placeholder="Type your reply here..."></textarea>
+
+            <br>
+
+            <button onclick="nextStage()">Next</button>
+
+        </div>
+
+        <!-- Stage 2: Reflect on my reply -->
+     <div id="stage2">
+
+            <h2>Before You Send...</h2>
+
+            <p>Here is the response you wrote:</p>
+
+            <p id="yourReply"></p>
+
+            <p>How do you feel about your response?</p>
+
+            <button onclick="chooseFeeling('calm')">Calm</button>
+
+            <button onclick="chooseFeeling('upset')">Upset</button>
+
+            <button onclick="chooseFeeling('angry')">Angry</button>
+
+            <p id="feedback"></p>
+
+            <button id="againButton" onclick="newMessage()">
+                Try Another Message
+            </button>
+
+        </div>
+
+    </div>
+
+     <script src="script.js"></script>
 
 </body>
 </html>
