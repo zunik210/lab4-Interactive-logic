@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    text-align: center;
+    padding: 30px;
+    color: #333333;
+}
+
+h1 {
+    color: #34495e;
+    font-size: 32px;
+}
+
+h2 {
+    color: #526d82;
+}
+
+/* Main white container */
+.container {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Incoming text message images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Text reply box */
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    background-color: #526d82;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px 4px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #34495e;
+}
+
+/* Reflection stage is hidden at first */
+#stage2 {
+    display: none;
+}
+
+/* Try Another Message button is hidden at first */
+#againButton {
+    display: none;
+}
+
+/* Feedback message */
+#feedback {
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 2
+    0px;
+}
+/* My typed out reply */
+#yourReply {
+    background-color: #f2f4f7;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
